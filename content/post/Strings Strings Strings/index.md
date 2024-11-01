@@ -43,7 +43,7 @@ We find the hash of the file, but we are asked to submit it in uppercase. So we 
 Our flag: _5A602BB8BA0F56285408093EEFE5F5DEE9F9134706D2788CAC40A89BAD2FBF66_
 
 ### Question 2
-**We are asked to provide the number of emails from BackdoorDiplomacy Planning report that have Senegal ccTLD.**
+**We are asked to provide the number of emails from BackdoorDiplomacy Planning report that have Senegal ccTLD.**<br>
 We are to look for emails with '_.sn_'.
 
 Let's go on and cat the file. ![cat](cat.png) Woah! We find that it a long bunch of text that we can't read. But at the end of file, we see a sign that it might be base64 encoded. 
@@ -60,12 +60,12 @@ Our flag: _15_
 Let's write a python script that will help us get the number of unique domains from the report. We will use the script to solve both Question 3 and Question 4.
 ![sol](sol.png)
 On running the script, we find that the number of unique domains is 39.
-![domains](domains.png)
+![domains](domains.png)<br>
 Our flag: _39_
 
 ### Question 4
-**Most referenced domain**
-From our script, we get that the most referenced domain is: example.tg
+**Most referenced domain**<br>
+From our script, we get that the most referenced domain is: example.tg<br>
 Our flag: _example.tg_
 
 ### Question 5
