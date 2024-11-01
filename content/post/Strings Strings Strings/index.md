@@ -24,7 +24,7 @@ Question 2: How many emails from the BackdoorDiplomacy Planning Report have Sene
 Question 3: Based on the previous questions, how many unique domains are in the report?<br>
 Question 4: Which domain is referenced the most ? eg example.com<br>
 Question 5: Which attack vectors are being used by the threat actor?<br>
-            Ransomware attack<br>
+            `Ransomware attack<br>
             Phishing Campaigns<br>
             Exploiting Vulnerabilities<br>
             Insider Threats<br>
@@ -69,8 +69,8 @@ From our script, we get that the most referenced domain is: example.tg<br>
 Our flag: _example.tg_
 
 ### Question 5
-**Attack vectors**
-This question is quite straight forward as it asks us to select the attack vectors used by the threat actor. From our report, at the end of the file, there is a section on Attack Vector Overview. 
+**Attack vectors**<br>
+This question is quite straight forward as it asks us to select the attack vectors used by the threat actor. From our report, at the end of the file, there is a section on Attack Vector Overview.
 ![vector](vector.png)
 We select all the four except _Ransomware attack_.
 
