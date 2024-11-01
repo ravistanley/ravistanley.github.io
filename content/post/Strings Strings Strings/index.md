@@ -50,13 +50,13 @@ Let's go on and cat the file. ![cat](cat.png) Woah! We find that it a long bunch
 Let's move it to our '_cyber kitchen'_ and see what we can do about the unreadable text. On CyberChef, we decode our text using base64 decode, and sadly we get a bunch of 'loren ipsum' text. ![cyberchef](cyberchef.png)
 ![Confused](confused.gif)
 
-Let's read through the 'loren ipsum' text and see what we can find. In the text, we find a block of base64 encoded text. ![base64](base64.png) Interesting. Let's decode it again and see what we have. After decoding, we get a readable report. Yippee! ![report](report.png)
+Reading through the 'loren ipsum' text, we can find a block of base64 encoded text. ![base64](base64.png) Interesting. Let's decode it again and see what we have. After decoding, we get a readable report. Yippee! ![report](report.png)
 
-Now that we have a readable report, let's copy it to our machine and name it _report.txt_. Let's open our file using sublime text. We are asked the number of emails with _.sn_. Using _'ctrl find'_, we find that there are 15 emails.
+Now that we have a readable report, let's copy it and save it as _report.txt_. Let's open our file using sublime text. We are asked the number of emails with _.sn_. Using _'ctrl find'_, we find that there are 15 emails.<br>
 Our flag: _15_
 
 ### Question 3
-**Unique domains in the report.**
+**Unique domains in the report.**<br>
 Let's write a python script that will help us get the number of unique domains from the report. We will use the script to solve both Question 3 and Question 4.
 ![sol](sol.png)
 On running the script, we find that the number of unique domains is 39.
