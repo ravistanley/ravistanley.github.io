@@ -24,4 +24,5 @@ We are given a zip file: _masheveve.zip_. After downloading the file, we do a 'u
 We need to check the type of our file first, using command _file <filename>_. Upon checking, we find out it has ASCII text.
 ![file](file.png)
 
-Smooth. Let's go on and cat the file. ![cat](cat.png). Woah! We find that it a long bunch of text that we can't read. But at the end of file, we see a sign that it might be base64 encoded. 
+Smooth. Let's go on and cat the file. ![cat](cat.png) Woah! We find that it a long bunch of text that we can't read. But at the end of file, we see a sign that it might be base64 encoded. 
+Let's move it to our '_cyber kitchen'_ and see what we can do about the unreadable text. On cyberchef.io, we decode our text using base64 decode, and luckily we get another bunch of latin text. ![cyberchef](cyberchef.png)
