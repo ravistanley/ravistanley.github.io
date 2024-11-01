@@ -24,7 +24,7 @@ Question 2: How many emails from the BackdoorDiplomacy Planning Report have Sene
 Question 3: Based on the previous questions, how many unique domains are in the report?<br>
 Question 4: Which domain is referenced the most ? eg example.com<br>
 Question 5: Which attack vectors are being used by the threat actor?<br>
-            `Ransomware attack<br>
+            Ransomware attack<br>
             Phishing Campaigns<br>
             Exploiting Vulnerabilities<br>
             Insider Threats<br>
