@@ -18,7 +18,7 @@ tags:
 Welcome to my first blog! I'm excited! In this blog post, we'll explore a Misc challenge.It was a challenge set by Bsides to select the first fifteen hackers and sponsor them to the event.I hope you will enjoy it!
 ![Challenge](strings_strings.png)
 
-We are required to answer the following questions\n:
+We are required to answer the following questions: <br>
 Question 1: What is the SHA256 Hash of the file ? Enter your answers in upper case
 
 Question 2: How many emails from the BackdoorDiplomacy Planning Report have Senegal ccTLD
