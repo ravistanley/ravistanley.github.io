@@ -54,7 +54,7 @@ Let's move it to our '_cyber kitchen'_ and see what we can do about the unreadab
 Let's read through the 'loren ipsum' text and see what we can find. In the text, we find a block of base64 encoded text. ![base64](base64.png) Interesting. Let's decode it again and see what we have. After decoding, we get a readable report. Yippee! ![report](report.png)
 
 Now that we have a readable report, let's copy it to our machine and name it _report.txt_. Let's open our file using sublime text. We are asked the number of emails with _.sn_. Using _'ctrl find'_, we find that there are 15 emails.
-Our flag: 15
+Our flag: _15_
 
 ### Question 3
 **Unique domains in the report.**
@@ -62,7 +62,7 @@ Let's write a python script that will help us get the number of unique domains f
 ![sol](sol.png)
 On running the script, we find that the number of unique domains is 39.
 ![domains](domains.png)
-Our flag: 39
+Our flag: _39_
 
 ### Question 4
 **Most referenced domain**
@@ -75,4 +75,6 @@ This question is quite straight forward as it asks us to select the attack vecto
 ![vector](vector.png)
 We select all the four except _Ransomware attack_.
 
+Yay! We are done!
+I hope you enjoyed the blog:)
 
