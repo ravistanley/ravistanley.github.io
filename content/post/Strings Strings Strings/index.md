@@ -17,3 +17,6 @@ tags:
 ### Introduction
 Welcome to my first blog! I'm excited! In this blog post, we'll explore a Misc challenge.It was a challenge set by Bsides to select the first fifteen hackers and sponsor them to the event.I hope you will enjoy it!
 ![Challenge](strings_strings.png)
+
+We are given a zip file: _masheveve.zip_. After downloading the file, we do a 'unzip misheveve.zip' command on our terminal.
+![Unzip](unzip.png)
