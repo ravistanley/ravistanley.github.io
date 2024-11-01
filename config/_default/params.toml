@@ -2,7 +2,7 @@
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
-favicon = "/favicon.png"
+favicon = "/avatar.png"
 
 [footer]
 since = 2020
@@ -19,7 +19,7 @@ subtitle = "CTF Player | Forensics"
 [sidebar.avatar]
 enabled = true
 local = true
-src = "img/avatar.png"
+src = "/avatar.png"
 
 [article]
 headingAnchor = false
