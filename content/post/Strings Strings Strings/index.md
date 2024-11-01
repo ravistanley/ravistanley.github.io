@@ -62,4 +62,17 @@ Let's write a python script that will help us get the number of unique domains f
 ![sol](sol.png)
 On running the script, we find that the number of unique domains is 39.
 ![domains](domains.png)
+Our flag: 39
+
+### Question 4
+**Most referenced domain**
+From our script, we get that the most referenced domain is: example.tg
+Our flag: _example.tg_
+
+### Question 5
+**Attack vectors**
+This question is quite straight forward as it asks us to select the attack vectors used by the threat actor. From our report, at the end of the file, there is a section on Attack Vector Overview. 
+![vector](vector.png)
+We select all the four except _Ransomware attack_.
+
 
