@@ -20,9 +20,13 @@ Welcome to my first blog! I'm excited! In this blog post, we'll explore a Misc c
 
 We are required to answer the following questions:
 Question 1: What is the SHA256 Hash of the file ? Enter your answers in upper case
+
 Question 2: How many emails from the BackdoorDiplomacy Planning Report have Senegal ccTLD
+
 Question 3: Based on the previous questions, how many unique domains are in the report?
+
 Question 4: Which domain is referenced the most ? eg example.com
+
 Question 5: Which attack vectors are being used by the threat actor ?
             Ransomware attack
             Phishing Campaigns
