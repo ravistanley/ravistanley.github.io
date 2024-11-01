@@ -58,4 +58,6 @@ Our flag: 15
 
 ### Question 3
 **Unique domains in the report.**
+Let's write a python script that will help us get the number of unique domains from the report. 
+![sol](sol.png)
 
