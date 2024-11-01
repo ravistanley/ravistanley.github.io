@@ -19,30 +19,25 @@ Welcome to my first blog! I'm excited! In this blog post, we'll explore a Misc c
 ![Challenge](strings_strings.png)
 
 We are required to answer the following questions: <br>
-Question 1: What is the SHA256 Hash of the file ? Enter your answers in upper case
-
-Question 2: How many emails from the BackdoorDiplomacy Planning Report have Senegal ccTLD
-
-Question 3: Based on the previous questions, how many unique domains are in the report?
-
-Question 4: Which domain is referenced the most ? eg example.com
-
-Question 5: Which attack vectors are being used by the threat actor ?
-            Ransomware attack
-            Phishing Campaigns
-            Exploiting Vulnerabilities
-            Insider Threats
-            DDoS Attacks
+Question 1: What is the SHA256 Hash of the file ? Enter your answers in upper case<br>
+Question 2: How many emails from the BackdoorDiplomacy Planning Report have Senegal ccTLD<br>
+Question 3: Based on the previous questions, how many unique domains are in the report?<br>
+Question 4: Which domain is referenced the most ? eg example.com<br>
+Question 5: Which attack vectors are being used by the threat actor?<br>
+            Ransomware attack<br>
+            Phishing Campaigns<br>
+            Exploiting Vulnerabilities<br>
+            Insider Threats<br>
+            DDoS Attacks<br>
 
 We are given a zip file: _masheveve.zip_. After downloading the file, we do a 'unzip misheveve.zip' command on our terminal. ![Unzip](unzip.png)
 
 ### Question 1
-**SHA256 Hash of the file.**
-
+**SHA256 Hash of the file.**<br>
 We need to check the type of our file first, using command _file <filename>_. Upon checking, we find out it has ASCII text.
-![file](file.png)
+![file](file.png)<br>
 Since we are asked to provide the SHA256 Hash of the file, we _'sha256sum <filename>'_. 
-![hash](hash.png)
+![hash](hash.png)<br>
 We find the hash of the file, but we are asked to submit it in uppercase. So we _tr_ command. 
 ![upper](upper.png)
 Our flag: _5A602BB8BA0F56285408093EEFE5F5DEE9F9134706D2788CAC40A89BAD2FBF66_
