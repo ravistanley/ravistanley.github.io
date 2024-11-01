@@ -58,6 +58,8 @@ Our flag: 15
 
 ### Question 3
 **Unique domains in the report.**
-Let's write a python script that will help us get the number of unique domains from the report. 
+Let's write a python script that will help us get the number of unique domains from the report. We will use the script to solve both Question 3 and Question 4.
 ![sol](sol.png)
+On running the script, we find that the number of unique domains is 39.
+![domains](domains.png)
 
