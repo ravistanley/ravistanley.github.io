@@ -19,4 +19,5 @@ Welcome to my first blog! I'm excited! In this blog post, we'll explore a Misc c
 ![Challenge](strings_strings.png)
 
 We are given a zip file: _masheveve.zip_. After downloading the file, we do a 'unzip misheveve.zip' command on our terminal.
+
 ![Unzip](unzip.png)
