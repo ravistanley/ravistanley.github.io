@@ -33,6 +33,7 @@ Question 5: Which attack vectors are being used by the threat actor ?
 We are given a zip file: _masheveve.zip_. After downloading the file, we do a 'unzip misheveve.zip' command on our terminal. ![Unzip](unzip.png)
 
 ### Question 1
+**SHA256 Hash of the file**
 We need to check the type of our file first, using command _file <filename>_. Upon checking, we find out it has ASCII text.
 ![file](file.png)
 Since we are asked to provide the SHA256 Hash of the file, we _'sha256sum <filename>'_. 
@@ -42,9 +43,10 @@ We find the hash of the file, but we are asked to submit it in uppercase. So we 
 Our flag: _5A602BB8BA0F56285408093EEFE5F5DEE9F9134706D2788CAC40A89BAD2FBF66_
 
 ### Question 2
+**We are asked to provide the number of emails from BackdoorDiplomacy Planning report that have Senegal ccTLD**
+We are to look for emails with '_.sn_'.
 
-
-Smooth. Let's go on and cat the file. ![cat](cat.png) Woah! We find that it a long bunch of text that we can't read. But at the end of file, we see a sign that it might be base64 encoded. 
+Let's go on and cat the file. ![cat](cat.png) Woah! We find that it a long bunch of text that we can't read. But at the end of file, we see a sign that it might be base64 encoded. 
 Let's move it to our '_cyber kitchen'_ and see what we can do about the unreadable text. On CyberChef, we decode our text using base64 decode, and sadly we get a bunch of 'loren ipsum' text. ![cyberchef](cyberchef.png)
 ![Confused](confused.gif)
-Let's read through the 'loren ipsum' text and see what we can find. In the text, we find a block of base64 encoded text. ![base64](base64.png). Interesting. Let's decode it again and see what we have. After decoding, we get a readable report. Yippee! ![report](report.png)
+Let's read through the 'loren ipsum' text and see what we can find. In the text, we find a block of base64 encoded text. ![base64](base64.png) Interesting. Let's decode it again and see what we have. After decoding, we get a readable report. Yippee! ![report](report.png)
