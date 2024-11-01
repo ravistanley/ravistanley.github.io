@@ -39,6 +39,10 @@ Since we are asked to provide the SHA256 Hash of the file, we _'sha256sum <filen
 ![hash](hash.png)
 We find the hash of the file, but we are asked to submit it in uppercase. So we _tr_ command. 
 ![upper](upper.png)
+Our flag: _5A602BB8BA0F56285408093EEFE5F5DEE9F9134706D2788CAC40A89BAD2FBF66_
+
+### Question 2
+
 
 Smooth. Let's go on and cat the file. ![cat](cat.png) Woah! We find that it a long bunch of text that we can't read. But at the end of file, we see a sign that it might be base64 encoded. 
 Let's move it to our '_cyber kitchen'_ and see what we can do about the unreadable text. On CyberChef, we decode our text using base64 decode, and sadly we get a bunch of 'loren ipsum' text. ![cyberchef](cyberchef.png)
