@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Misc on Beetle's Blog</title><link>https://ravistanley2.github.io/categories/misc/</link><description>Recent content in Misc on Beetle's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ravistanley2.github.io/categories/misc/index.xml" rel="self" type="application/rss+xml"/><item><title>Strings Strings Strings</title><link>https://ravistanley2.github.io/p/misc/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://ravistanley2.github.io/p/misc/</guid><description>&lt;img src="https://ravistanley2.github.io/p/misc/misc.png" alt="Featured image of post Strings Strings Strings" />&lt;h3 id="introduction">Introduction
+&lt;/h3>&lt;p>Welcome to my first blog! I&amp;rsquo;m excited! In this blog post, we&amp;rsquo;ll explore a Misc challenge.It was a challenge set by Bsides to select the first fifteen hackers and sponsor them to the event.I hope you will enjoy it!
+&lt;img src="https://ravistanley2.github.io/p/misc/strings_strings.png"
+width="1116"
+height="636"
+srcset="https://ravistanley2.github.io/p/misc/strings_strings_hu16081843901893719342.png 480w, https://ravistanley2.github.io/p/misc/strings_strings_hu4966981414574515535.png 1024w"
+loading="lazy"
+alt="Challenge"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+>&lt;/p>
+&lt;p>We are required to answer the following questions: &lt;br>
+Question 1: What is the SHA256 Hash of the file ? Enter your answers in upper case&lt;br>
+Question 2: How many emails from the BackdoorDiplomacy Planning Report have Senegal ccTLD&lt;br>
+Question 3: Based on the previous questions, how many unique domains are in the report?&lt;br>
+Question 4: Which domain is referenced the most ? eg example.com&lt;br>
+Question 5: Which attack vectors are being used by the threat actor?&lt;br>
+Ransomware attack&lt;br>
+Phishing Campaigns&lt;br>
+Exploiting Vulnerabilities&lt;br>
+Insider Threats&lt;br>
+DDoS Attacks&lt;br>&lt;/p>
+&lt;p>We are given a zip file: &lt;em>masheveve.zip&lt;/em>. After downloading the file, we do a &amp;lsquo;unzip misheveve.zip&amp;rsquo; command on our terminal. &lt;img src="https://ravistanley2.github.io/p/misc/unzip.png"
+width="971"
+height="228"
+srcset="https://ravistanley2.github.io/p/misc/unzip_hu17194992831359540959.png 480w, https://ravistanley2.github.io/p/misc/unzip_hu10356374574107296961.png 1024w"
+loading="lazy"
+alt="Unzip"
+class="gallery-image"
+data-flex-grow="425"
+data-flex-basis="1022px"
+>&lt;/p>
+&lt;h3 id="question-1">Question 1
+&lt;/h3>&lt;p>&lt;strong>SHA256 Hash of the file.&lt;/strong>&lt;br>
+We need to check the type of our file first, using command &lt;em>file &lt;filename>&lt;/em>. Upon checking, we find out it has ASCII text.
+&lt;img src="https://ravistanley2.github.io/p/misc/file.png"
+width="974"
+height="201"
+srcset="https://ravistanley2.github.io/p/misc/file_hu13060648401300844580.png 480w, https://ravistanley2.github.io/p/misc/file_hu4264309450035006184.png 1024w"
+loading="lazy"
+alt="file"
+class="gallery-image"
+data-flex-grow="484"
+data-flex-basis="1162px"
+>&lt;br>
+Since we are asked to provide the SHA256 Hash of the file, we &lt;em>&amp;lsquo;sha256sum &lt;filename>&amp;rsquo;&lt;/em>.
+&lt;img src="https://ravistanley2.github.io/p/misc/hash.png"
+width="915"
+height="95"
+srcset="https://ravistanley2.github.io/p/misc/hash_hu15824960322409278824.png 480w, https://ravistanley2.github.io/p/misc/hash_hu6889428363405788853.png 1024w"
+loading="lazy"
+alt="hash"
+class="gallery-image"
+data-flex-grow="963"
+data-flex-basis="2311px"
+>&lt;br>
+We find the hash of the file, but we are asked to submit it in uppercase. So we &lt;em>tr&lt;/em> command.
+&lt;img src="https://ravistanley2.github.io/p/misc/upper.png"
+width="982"
+height="152"
+srcset="https://ravistanley2.github.io/p/misc/upper_hu5239936170999202873.png 480w, https://ravistanley2.github.io/p/misc/upper_hu8230609578375930794.png 1024w"
+loading="lazy"
+alt="upper"
+class="gallery-image"
+data-flex-grow="646"
+data-flex-basis="1550px"
+>
+Our flag: &lt;em>5A602BB8BA0F56285408093EEFE5F5DEE9F9134706D2788CAC40A89BAD2FBF66&lt;/em>&lt;/p>
+&lt;h3 id="question-2">Question 2
+&lt;/h3>&lt;p>&lt;strong>We are asked to provide the number of emails from BackdoorDiplomacy Planning report that have Senegal ccTLD.&lt;/strong>&lt;br>
+We are to look for emails with &amp;lsquo;&lt;em>.sn&lt;/em>&amp;rsquo;.&lt;/p>
+&lt;p>Let&amp;rsquo;s go on and cat the file. &lt;img src="https://ravistanley2.github.io/p/misc/cat.png"
+width="1366"
+height="768"
+srcset="https://ravistanley2.github.io/p/misc/cat_hu12172675987977257720.png 480w, https://ravistanley2.github.io/p/misc/cat_hu3416185025518269560.png 1024w"
+loading="lazy"
+alt="cat"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+> Woah! We find that it a long bunch of text that we can&amp;rsquo;t read. But at the end of file, we see a sign that it might be base64 encoded.
+Let&amp;rsquo;s move it to our &amp;lsquo;&lt;em>cyber kitchen&amp;rsquo;&lt;/em> and see what we can do about the unreadable text. On CyberChef, we decode our text using base64 decode, and sadly we get a bunch of &amp;rsquo;loren ipsum&amp;rsquo; text. &lt;img src="https://ravistanley2.github.io/p/misc/cyberchef.png"
+width="1089"
+height="629"
+srcset="https://ravistanley2.github.io/p/misc/cyberchef_hu9614019157697872917.png 480w, https://ravistanley2.github.io/p/misc/cyberchef_hu9813246549668146970.png 1024w"
+loading="lazy"
+alt="cyberchef"
+class="gallery-image"
+data-flex-grow="173"
+data-flex-basis="415px"
+>
+&lt;img src="https://ravistanley2.github.io/p/misc/confused.gif"
+width="311"
+height="311"
+srcset="https://ravistanley2.github.io/p/misc/confused_hu1401406633360598336.gif 480w, https://ravistanley2.github.io/p/misc/confused_hu15035165422077713624.gif 1024w"
+loading="lazy"
+alt="Confused"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+>&lt;/p>
+&lt;p>Reading through the &amp;rsquo;loren ipsum&amp;rsquo; text, we can find a block of base64 encoded text. &lt;img src="https://ravistanley2.github.io/p/misc/base64.png"
+width="1089"
+height="595"
+srcset="https://ravistanley2.github.io/p/misc/base64_hu16824428093403525240.png 480w, https://ravistanley2.github.io/p/misc/base64_hu15669499969338019404.png 1024w"
+loading="lazy"
+alt="base64"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="439px"
+> Interesting. Let&amp;rsquo;s decode it again and see what we have. After decoding, we get a readable report. Yippee! &lt;img src="https://ravistanley2.github.io/p/misc/report.png"
+width="1087"
+height="593"
+srcset="https://ravistanley2.github.io/p/misc/report_hu9119011988951790931.png 480w, https://ravistanley2.github.io/p/misc/report_hu9858489448405390381.png 1024w"
+loading="lazy"
+alt="report"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="439px"
+>&lt;/p>
+&lt;p>Now that we have a readable report, let&amp;rsquo;s copy it and save it as &lt;em>report.txt&lt;/em>. Let&amp;rsquo;s open our file using sublime text. We are asked the number of emails with &lt;em>.sn&lt;/em>. Using &lt;em>&amp;lsquo;ctrl find&amp;rsquo;&lt;/em>, we find that there are 15 emails.&lt;br>
+Our flag: &lt;em>15&lt;/em>&lt;/p>
+&lt;h3 id="question-3">Question 3
+&lt;/h3>&lt;p>&lt;strong>Unique domains in the report.&lt;/strong>&lt;br>
+Let&amp;rsquo;s write a python script that will help us get the number of unique domains from the report. We will use the script to solve both Question 3 and Question 4.
+&lt;img src="https://ravistanley2.github.io/p/misc/sol.png"
+width="972"
+height="557"
+srcset="https://ravistanley2.github.io/p/misc/sol_hu7796403662719732516.png 480w, https://ravistanley2.github.io/p/misc/sol_hu17969305283248481628.png 1024w"
+loading="lazy"
+alt="sol"
+class="gallery-image"
+data-flex-grow="174"
+data-flex-basis="418px"
+>
+On running the script, we find that the number of unique domains is 39.
+&lt;img src="https://ravistanley2.github.io/p/misc/domains.png"
+width="904"
+height="254"
+srcset="https://ravistanley2.github.io/p/misc/domains_hu3601105313374449345.png 480w, https://ravistanley2.github.io/p/misc/domains_hu18150620247241019043.png 1024w"
+loading="lazy"
+alt="domains"
+class="gallery-image"
+data-flex-grow="355"
+data-flex-basis="854px"
+>&lt;br>
+Our flag: &lt;em>39&lt;/em>&lt;/p>
+&lt;h3 id="question-4">Question 4
+&lt;/h3>&lt;p>&lt;strong>Most referenced domain&lt;/strong>&lt;br>
+From our script, we get that the most referenced domain is: example.tg&lt;br>
+Our flag: &lt;em>example.tg&lt;/em>&lt;/p>
+&lt;h3 id="question-5">Question 5
+&lt;/h3>&lt;p>&lt;strong>Attack vectors&lt;/strong>&lt;br>
+This question is quite straight forward as it asks us to select the attack vectors used by the threat actor. From our report, at the end of the file, there is a section on Attack Vector Overview.
+&lt;img src="https://ravistanley2.github.io/p/misc/vector.png"
+width="978"
+height="109"
+srcset="https://ravistanley2.github.io/p/misc/vector_hu3148260668267795452.png 480w, https://ravistanley2.github.io/p/misc/vector_hu13773730983422074787.png 1024w"
+loading="lazy"
+alt="vector"
+class="gallery-image"
+data-flex-grow="897"
+data-flex-basis="2153px"
+>
+We select all the four except &lt;em>Ransomware attack&lt;/em>.&lt;/p>
+&lt;p>Yay! We are done!
+I hope you enjoyed the blog:)&lt;/p></description></item></channel></rss>
