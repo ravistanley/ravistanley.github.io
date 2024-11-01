@@ -18,10 +18,27 @@ tags:
 Welcome to my first blog! I'm excited! In this blog post, we'll explore a Misc challenge.It was a challenge set by Bsides to select the first fifteen hackers and sponsor them to the event.I hope you will enjoy it!
 ![Challenge](strings_strings.png)
 
+We are required to answer the following questions:
+Question 1: What is the SHA256 Hash of the file ? Enter your answers in upper case
+Question 2: How many emails from the BackdoorDiplomacy Planning Report have Senegal ccTLD
+Question 3: Based on the previous questions, how many unique domains are in the report?
+Question 4: Which domain is referenced the most ? eg example.com
+Question 5: Which attack vectors are being used by the threat actor ?
+            Ransomware attack
+            Phishing Campaigns
+            Exploiting Vulnerabilities
+            Insider Threats
+            DDoS Attacks
+
 We are given a zip file: _masheveve.zip_. After downloading the file, we do a 'unzip misheveve.zip' command on our terminal. ![Unzip](unzip.png)
 
+### Question 1
 We need to check the type of our file first, using command _file <filename>_. Upon checking, we find out it has ASCII text.
 ![file](file.png)
+Since we are asked to provide the SHA256 Hash of the file, we _'sha256sum <filename>'_. 
+![hash](hash.png)
+We find the hash of the file, but we are asked to submit it in uppercase. So we _tr_ command. 
+![upper](upper.png)
 
 Smooth. Let's go on and cat the file. ![cat](cat.png) Woah! We find that it a long bunch of text that we can't read. But at the end of file, we see a sign that it might be base64 encoded. 
 Let's move it to our '_cyber kitchen'_ and see what we can do about the unreadable text. On CyberChef, we decode our text using base64 decode, and sadly we get a bunch of 'loren ipsum' text. ![cyberchef](cyberchef.png)
