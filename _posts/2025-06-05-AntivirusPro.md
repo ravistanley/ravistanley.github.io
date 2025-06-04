@@ -51,7 +51,7 @@ We see the encrypted flag: #!&$!6$9.q61&rwr/q0q'd'?42
 
 ### Reversing xorCipher
 From Ghidra: _std::__cxx11::string::operator+=(param_1, *iterator ^ key);_
-This confirms a single-byte XOR cipher.
+This confirms a single-byte XOR cipher. <br>
 We know that the string was encrpyted twice:
 - The original flag --> XORed --> intermediate result.
 - Intermediate --> XORed again --> the obfuscated string we see: #!&$!6$9.q61&rwr/q0q'd'?42
