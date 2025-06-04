@@ -18,6 +18,7 @@ flag format:
 ### Introduction
 In this reverse engineering challenge, we're given an executable called AntivirusPro and told: <br>
 “The antivirus says your system is clean... but are you sure?”
+
 ![Challenge](/assets/img/posts/antiviruspro/antiviruspro.png) <br>
 This sounds like a classic misdirection challenge — where the program pretends to be doing something straightforward, but hides its real behavior. The challenge tests our ability to reverse engineer binary logic, understand obfuscation, and recover hidden data.
 
