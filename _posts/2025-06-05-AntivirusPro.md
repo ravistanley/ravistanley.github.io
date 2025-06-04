@@ -22,7 +22,7 @@ In this reverse engineering challenge, we're given an executable called Antiviru
 This sounds like a classic misdirection challenge — where the program pretends to be doing something straightforward, but hides its real behavior. The challenge tests our ability to reverse engineer binary logic, understand obfuscation, and recover hidden data.
 
 ### Initial Recon
-We start by examining the binary properties using standard Linux tools.
+We start by examining the binary properties using standard Linux tools. <br>
 _File_ output: ![Challenge](/assets/img/posts/antiviruspro/file.png) <br>
   - It's 64-bit Linux ELF binary.
   - Statically linked: means no dynamic dependencies.
@@ -35,7 +35,7 @@ _Running the binary_:
 We get a fake-looking flag: _CLEAN_SYSTEM_. This is clearly not the real flag (no acdfctf{} format).
 
 ### Static Analysis in Ghidra
-Since the binary is not stripped, I imported it into Ghidra and inspected various functions.
+Since the binary is not stripped, I imported it into Ghidra and inspected various functions. <br>
 _Observations in main function_
 Looking at the _main_ function, we see:
   - Strings and fake scanning output.
@@ -50,7 +50,7 @@ I ran the binary in _gdb_: ![Challenge](/assets/img/posts/antiviruspro/gdb.png) 
 We see the encrypted flag: #!&$!6$9.q61&rwr/q0q'd'?42
 
 ### Reversing xorCipher
-From Ghidra: std::__cxx11::string::operator+=(param_1, *iterator ^ key);
+From Ghidra: _std::__cxx11::string::operator+=(param_1, *iterator ^ key);_
 This confirms a single-byte XOR cipher.
 We know that the string was encrpyted twice:
 - The original flag --> XORed --> intermediate result.
