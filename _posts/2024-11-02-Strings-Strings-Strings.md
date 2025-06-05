@@ -3,7 +3,7 @@ title: Strings Strings Strings
 description: The CTI intercepted the attached file. Analyze it and respond to the questions. Download the attached file and make sense out of it.
 slug: misc
 date: 2024-11-02 00:00:00+0000
-image: /assets/img/posts/strings/B33tl3's blog.png
+image: /assets/img/posts/bsides.png
 categories:
     - Misc
     - Easy
