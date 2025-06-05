@@ -1,6 +1,6 @@
 ---
 title: AntivirusPro
-description: The antivirus says your system is clean... but are you sure?
+description: "The antivirus says your system is clean... but are you sure?"
 slug: rev
 date: 2025-06-05 00:00:00+0000
 image: /assets/img/posts/logo.png
