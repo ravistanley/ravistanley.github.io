@@ -49,9 +49,9 @@ This is the main key-checking routine. It:
   - Loops over 23 characters of the input. 'local_28 = &DAT_00102004;' points to 23 reference bytes stored in the binary. These represent the correct characters XORed with 0x65.
   - Compares each character after some obfuscation.
   - Aggregates errors using a bitwise OR (|).
-  - If there is no error, the key  is correct.
+  - If there is no error, the key  is correct. <br>
 
-Reference bytes, DAT_00102004:
+Reference bytes, DAT_00102004: <br>
 ![Challenge](/assets/img/posts/labyrinth/ref.png) <br>
 Using this, we can write a decoding script.
 ![Challenge](/assets/img/posts/labyrinth/script.png) <br>
