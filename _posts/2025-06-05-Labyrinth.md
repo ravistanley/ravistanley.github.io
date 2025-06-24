@@ -1,18 +1,11 @@
 ---
 title: Labyrinth
+author: b33tl3
 description: "Find your way through the labyrinth and recover the hidden treasure within."
-slug: rev
 date: 2025-06-05 00:00:00+0000
 image: /assets/img/posts/labyrinth/cyber-lympics.png
-categories:
-  - Reverse Engineering
-tags:
-  - Rev
-  - Cyberlympics
-points:
-  - 250
-flag format:
-  - acdfctf{}
+categories: [Reverse Engineering]
+tags: [Rev, Cyberlympics]
 ---
 
 ### Introduction

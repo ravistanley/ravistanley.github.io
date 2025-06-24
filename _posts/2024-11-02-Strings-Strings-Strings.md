@@ -1,16 +1,11 @@
 ---
 title: Strings Strings Strings
+author: b33tl3
 description: The CTI intercepted the attached file. Analyze it and respond to the questions. Download the attached file and make sense out of it.
-slug: misc
 date: 2024-11-02 00:00:00+0000
 image: /assets/img/posts/bsides.png
-categories:
-    - Misc
-    - Easy
-tags:
-    - Misc
-    - Easy
-    - Bsides
+categories: [Misc, Easy]
+tags: [Misc, Easy, Bsides]
 ---
 
 ### Introduction

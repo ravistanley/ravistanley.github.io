@@ -1,18 +1,11 @@
 ---
 title: AntivirusPro
+author: b33tl3
 description: "The antivirus says your system is clean... but are you sure?"
-slug: rev
 date: 2025-06-05 00:00:00+0000
 image: /assets/img/posts/logo.png
-categories:
-    - Reverse Engineering
-tags:
-    - Rev
-    - Cyberlympics
-points:
-    - 1000
-flag format:
-    - acdfctf{}
+categories: [Reverse Engineering]
+tags: [Rev, Cyberlympics]
 ---
 
 ### Introduction
