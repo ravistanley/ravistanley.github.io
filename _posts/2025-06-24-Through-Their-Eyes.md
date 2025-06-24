@@ -3,7 +3,7 @@ title: Through Their Eyes
 author: b33tl3
 description: Every story has its origins, and Black History Month is no exception. Do you know who first laid its foundation? But let’s take it a step further—history isn’t just made, it’s captured. Who was behind the lens of his most famous photograph?
 date: 2025-06-24 00:00:00+0000
-image: /assets/img/posts/carnage/carnage.png
+image: /assets/img/posts/ctfroom.png
 categories: [CTFRoom, OSINT]
 tags: [OSINT]
 ---
