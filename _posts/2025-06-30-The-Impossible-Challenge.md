@@ -27,7 +27,7 @@ This... means something. Probably. <br>
 But staring at it wasn’t helping. I tried everything - ROT13, ROT47, brute force. Heck, I even fired up _fcrackzip_, adjusted my hoodie, and dimmed the lights. Felt like Mr. Robot for a minute… until my CPU started wheezing like a cat with asthma. <br>
 **Result**: Overheated CPU, zero cracked passwords. <br>
 Turns out I’m just a guy who thinks he’s hacking but is really melting his CPU over a zip file named ‘Impossible_1587053656818.zip’. <br>
-![Challenge](/assets/img/posts/impossible/frack.png) <br>
+![Challenge](/assets/img/posts/impossible/fcrack.png) <br>
 
 ## Time to cook with CyberChef
 Alright, back to decoding. I tossed the string into CyberChef and started experimenting with different recipes. <br>
