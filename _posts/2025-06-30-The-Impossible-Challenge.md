@@ -49,8 +49,8 @@ No password yet, more of a hint. Tells us that that it has been in front of our 
 The hint says that “It’s inside the text, in front of your eyes!”. This screams steganography inside text. <br>
 Time to look for the unusual. I copied every chunk of text from the dashboard into VSCode, hoping to see something... weird.
 ![Challenge](/assets/img/posts/impossible/steg.png) <br>
-The ‘Hmm’ text looks interesting. Pasting it in a search box there is a cursor jump. This suggests that there are some hidden but present characters.
-This is textbook ***zero-width steganography** - data hidden in Unicode characters that don’t display on screen but still exist in the text.
+The ‘Hmm’ text looks interesting. Pasting it in a search box there is a cursor jump. This suggests that there are some hidden but present characters. <br>
+This is textbook ***zero-width steganography** - data hidden in Unicode characters that don’t display on screen but still exist in the text. <br>
 To confirm, I tossed it into Python:
 ```
 impossible = "Hmm\u200c\u200c\u200c\u200c\u200d\u202c\u200c\u200d\u200c\u200c\u200c\u200c\u200d\ufeff\u200c\ufeff\u200c\u200c\u200c\u200c\u200d\ufeff\u200c\ufeff\u200c\
