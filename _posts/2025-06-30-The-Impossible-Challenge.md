@@ -10,7 +10,7 @@ tags: [Steganography, Encoding, Decoding]
 
 ![Challenge](/assets/img/posts/impossible/imp.png) <br>
 
-In this Impossible Challenge, the task looks simple:
+In this Impossible Challenge, the task looks simple: <br>
 **Download a file and find the flag. Easy, right?**
 ![Challenge](/assets/img/posts/impossible/download.png) <br>
 Well… not quite. <br>
@@ -38,10 +38,12 @@ Combining both gave me this value:
 ```
 Looks like hex! <br>
 Decoding from Hex gave me a base64 string, so progress at last:
-```SXQncyBpbnNpZGUgdGhlIHRleHQsIGluIGZyb250IG9mIHlvdXIgZXllcyE=```
+```
+SXQncyBpbnNpZGUgdGhlIHRleHQsIGluIGZyb250IG9mIHlvdXIgZXllcyE=
+```
 Decode that and I get…
 ![Challenge](/assets/img/posts/impossible/chef.png) <br>
-No password yet, more of a hint. Tells us that that it has been in front of our eyes the while time.
+No password yet, more of a hint. Tells us that that it has been in front of our eyes the whole time.
 
 ## Recon - Steganography
 The hint says that “It’s inside the text, in front of your eyes!”. This screams steganography inside text. <br>
