@@ -18,7 +18,7 @@ This will be structured to go through what you need to do, step by step. Make su
 I found out that ports 22, 80, 110, and 143 are open. <br>
 Nmap scan results: <br>
 ```
-python fowsniffCTF nmap -sV -sC -O -A -T4 10.10.43.65 -oN fowsniff
+fowsniffCTF nmap -sV -sC -O -A -T4 10.10.43.65 -oN fowsniff
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-08-05 03:06 EDT
 Nmap scan report for 10.10.43.65
 Host is up (0.15s latency).
