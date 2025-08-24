@@ -48,7 +48,7 @@ But here, the challenge description says the boss wanted “2 primes” but then
 Inspecting n, it turns out to be an even number. Dividing repeatedly by 2: n = 2^1337 <br>
 So instead of a secure RSA modulus, the “boss” just picked a single prime base (2), raised to a power. That’s why the system is “half-baked.” <br>
 I came up with a script to solve this challenge: <br>
-```
+```python
 n = 2999882211429630485883650302877390551374775896896788078868325571891218714007953558505041388044334470201821965796391409921668122818083570668568660678895962925314655342154580738160357641047430373917156721861167458749434940591017306495880180805391185380307427539761080193213111534709378234670214284858143824384128077373871882033779166821558334466322908873171079631967672353755842618738501413251304204009472
 e = 65537
 c = 406899880095774364291729342954053590589397159355690238625035627993181937179155345315119680672959072539867481892078815991872758149967716015787715641627573675995588117336214614607141418649060621601912927211427125930492034626696064268888134600578061035823593102305974307471288655933533166631878786592162718700742194241218161182091193661813824775250046054642533470046107935752737753871183553636510066553725
@@ -128,7 +128,7 @@ Why this works: The space of 1024 keys is tiny; one key will produce a fully rea
 
 I implemented standard S-DES (permutation tables, S-boxes, key schedule) and tried all keys 0…1023; for each decryption I checked how printable the output was, and whether it had flag-like markers. <br>
 Script that I used: <br>
-```
+```python
 #!/usr/bin/env python3
 from typing import List
 
@@ -285,7 +285,7 @@ With this system, every four DNA bases become one byte, because each base contri
 
 #### Decoding
 Script used: <br>
-```
+```python
 dna = "CGAGCTAGCTCCCGTGCGTGCGCCCTAGCTGTATACCGGCATAACGTGATATCGTACCTTCTAAATAACGGCATACATCACGTGATATCCTTCGTCATCAATCCATCTATATCTAGCCTTATAACGCGCCTTATCCATAACTCCCTAGCGCAATAACTCCATCGCGGACCTTCTAAATCAATCCATCCCTAACGGACTAGATCAATCCATATCCTTATACATCCCCTTCGATCTAGATAAATACATCCATCCATCACGTGATCTCCCGATCACTCCATACATCTAGACATGCATATCTTC"
 
 mapping = {'A':'00','C':'01','G':'10','T':'11'}
@@ -321,7 +321,7 @@ Decoding all the token gives a base64 string. <br>
 
 #### Decoding
 Solution script: <br>
-```
+```py
 import base64
 
 s = "89|89.21|55.13.5.1|34.13.2|89.8.1|89.13.5.2|34.13.5.1|89.13.5.1|89.8.2|89.21|89.21.5|34.13.3.1|89.8|55.13|55.21.2|89.13|89.1|89.21.8.3.1|55.8.2|89.21.8.2|89.1|55.13|55.21.2|89.21.5.2|55.21.8.3.1|34.13.3.1|55.8.3|89.21.1|55.21.1|55.21.8.2|55.1|89.21.8.1|89.1|89.13.5.1|55.2|34.13.5.2|89.1|55.21.8.3|55.21.2|89.21.3.1|89.1|55.21.8.3|34.13.5.1|89.13.5|89.8.1|34.13.3.1|55.13.5.1|89.13.5.2|89.13|55.21.5|55.5.1|55.5.1"
@@ -358,7 +358,7 @@ output.txt: <br>
 ![Challenge](/assets/img/posts/brunner/output.png) <br>
 
 trippi_troppa_sus.py: <br>
-```
+```python
 #!/usr/bin/env python3
 import sys as _tralalero_tralala_impostor_____
 (lambda _bombardiro_crocodilo___: [
@@ -459,7 +459,7 @@ To recover the flag, we need to undo each step in reverse: <br>
  - XOR with the same repeating 7-byte key from sha256("skibidiskibidi").
 
 Decoder script: <br>
-```
+```py
 #!/usr/bin/env python3
 import base64, hashlib
 from itertools import cycle
