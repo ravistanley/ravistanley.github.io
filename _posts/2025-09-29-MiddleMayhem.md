@@ -4,8 +4,8 @@ author: b33tl3
 description: SOC Investigation
 date: 2025-09-29 00:00:00+0000
 image: /assets/img/posts/middlemayhem/logo.png
-categories: [Easy]
-tags: [BTLO, splunk, soc]
+categories: [BTLO]
+tags: [Easy, splunk, soc]
 ---
 
 ## Scenario
