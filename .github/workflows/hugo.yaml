@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # Ensure this matches your branch name (usually 'main')
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -21,13 +21,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # Fetch the Blowfish theme
+          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
-          go-version: '1.20' # Needed for Hugo Modules
+          go-version: '1.21'
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -39,7 +39,7 @@ jobs:
         run: hugo --minify
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3  # <--- This was the fix (v2 -> v3)
         with:
           path: ./public
 
@@ -53,4 +53,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4  # <--- Updated this to v4 as well
