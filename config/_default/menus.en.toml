@@ -1,0 +1,23 @@
+[[main]]
+  identifier = "writeups"
+  name = "Writeups"
+  url = "/writeups/"
+  weight = 10  # 1st
+
+[[main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 20  # 2nd
+
+[[main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 30  # 3rd
+
+[[main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 40  # 4th
