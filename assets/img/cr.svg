@@ -1,0 +1,99 @@
+<!-- ADVANCED FULLSCREEN CYBERPUNK SVG – ROTATING TOOL / ATTACK SIMULATION -->
+<!-- No straight lines. Continuous motion. Tool-in-action aesthetic. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+
+  <defs>
+    <!-- ===== COLORS ===== -->
+    <radialGradient id="core">
+      <stop offset="0%" stop-color="#00faff" stop-opacity="1" />
+      <stop offset="60%" stop-color="#00bcd4" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#001014" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="ringBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00faff" />
+      <stop offset="100%" stop-color="#0066ff" />
+    </linearGradient>
+
+    <linearGradient id="ringRed" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff003c" />
+      <stop offset="100%" stop-color="#ff6a00" />
+    </linearGradient>
+
+    <!-- ===== GLOW ===== -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- ===== TOOL SYMBOL ===== -->
+    <symbol id="scanner" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="90" fill="none" stroke="url(#ringBlue)" stroke-width="2" stroke-dasharray="4 12" />
+      <circle cx="100" cy="100" r="60" fill="none" stroke="url(#ringRed)" stroke-width="2" stroke-dasharray="20 10" />
+      <circle cx="100" cy="100" r="12" fill="#00faff" />
+    </symbol>
+  </defs>
+
+  <!-- ===== BACKGROUND ===== -->
+  <rect width="100%" height="100%" fill="#02060d" />
+
+  <!-- ===== GLOBAL ROTATION LAYER ===== -->
+  <g opacity="0.9">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 960 540" to="360 960 540" dur="180s" repeatCount="indefinite" />
+
+    <!-- OUTER ENERGY RINGS -->
+    <g filter="url(#glow)">
+      <circle cx="960" cy="540" r="420" fill="none" stroke="url(#ringBlue)" stroke-width="1" stroke-dasharray="2 18" />
+      <circle cx="960" cy="540" r="520" fill="none" stroke="url(#ringRed)" stroke-width="1" stroke-dasharray="30 40" />
+    </g>
+  </g>
+
+  <!-- ===== CORE SYSTEM ===== -->
+  <g filter="url(#glow)">
+    <circle cx="960" cy="540" r="180" fill="url(#core)">
+      <animate attributeName="r" values="160;200;160" dur="8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- ===== ACTIVE TOOL ORBITS (SCANNERS / BRUTE FORCE) ===== -->
+  <g>
+    <g>
+      <use href="#scanner" x="860" y="240" width="200" height="200" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate"
+          from="0 960 540" to="360 960 540" dur="12s" repeatCount="indefinite" />
+      </use>
+    </g>
+
+    <g>
+      <use href="#scanner" x="400" y="480" width="200" height="200" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate"
+          from="360 960 540" to="0 960 540" dur="16s" repeatCount="indefinite" />
+      </use>
+    </g>
+
+    <g>
+      <use href="#scanner" x="1300" y="600" width="200" height="200" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate"
+          from="0 960 540" to="360 960 540" dur="20s" repeatCount="indefinite" />
+      </use>
+    </g>
+  </g>
+
+  <!-- ===== RANDOMIZED FLOATING PACKETS ===== -->
+  <g fill="#00faff" opacity="0.6">
+    <circle cx="200" cy="300" r="2">
+      <animateTransform type="translate" from="0 0" to="1600 600" dur="30s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1700" cy="200" r="2">
+      <animateTransform type="translate" from="0 0" to="-1500 700" dur="34s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="900" r="2">
+      <animateTransform type="translate" from="0 0" to="800 -600" dur="26s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+</svg>
