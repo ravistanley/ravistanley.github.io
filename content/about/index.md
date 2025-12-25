@@ -103,6 +103,11 @@ Hands-on blue team training with focus on SOC operations and threat detection.
   <li><strong>Introduction to Cybersecurity</strong> – Cisco (Jun 2022)</li>
 </ul>
 
+### 🏆 Honors & Achievements
+<ul>
+  <li><strong>TryHackMe Advent of Cyber 2025</strong> - Certificate of Completion</li>
+  <li><strong>Hack The Box: Hack The Boo Practice</strong> - Certificate of Participation</li>
+</ul>
 
 ### 📡 Operational Capabilities
 
