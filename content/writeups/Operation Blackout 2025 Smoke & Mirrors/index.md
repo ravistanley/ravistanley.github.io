@@ -15,8 +15,9 @@ Using the exported event logs, your objective is to uncover how the attacker com
 Given a zip file with 3 event log files. 
  - Microsoft-Windows-Powershell.evtx
  - Microsoft-Windows-Powershell-Operational.evtx
- - Microsoft-Windows-Sysmon-Operational.evtx
-I used evtxe tool to combine the event logs into one csv file:
+ - Microsoft-Windows-Sysmon-Operational.evtx <br>
+
+I used evtxe tool to combine the event logs into one csv file: 
 {{< details title="Click to view the full EvtxECmd execution output" >}}
 ```
 D:\Tools\EvtxeCmd>EvtxECmd.exe -d "D:\Sherlocks\Smoke & Mirrors" --csv "D:\Sherlocks\Smoke & Mirrors" --csvf timeline.csv
