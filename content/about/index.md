@@ -24,7 +24,20 @@ Experienced in **web application security testing (OWASP Top 10)**, vulnerabilit
 ### 🚀 Professional Experience
 {{< timeline >}} 
 
-{{< timelineItem icon="shield" header="Security Analyst Intern" badge="Apr 2025 – May 2025" subheader="Hack Secure" >}}
+{{< timelineItem icon="shield" header="Cybersecurity Instructor" badge="March 2026 – Present" subheader="Hack Secure" >}}
+<ul>
+  <li>Delivering hands-on training in red teaming and blue teaming concepts, introducing beginners to real-world attack and defense techniques.
+  </li>
+  <li>Teaching exploitation of common vulnerabilities (e.g., OWASP Top 10) and guiding students on practical mitigation strategies.
+  </li>
+  <li>Leading lab-based sessions using tools such as Splunk, Wireshark, Burp Suite, Metasploit, and Nmap for security monitoring, traffic analysis, and vulnerability assessment.
+  </li>
+  <li>Simplifying complex cybersecurity concepts into beginner-friendly explanations, improving student understanding and engagement.
+  </li>
+</ul>
+{{< /timelineItem >}}
+
+{{< timelineItem icon="shield" header="Cybersecurity Intern" badge="September 2025 – November 2025" subheader="Hack Secure" >}}
 <ul>
   <li>Conducted penetration testing on web applications, identifying and exploiting SQL injection and XSS vulnerabilities.</li>
   <li>Performed vulnerability scans and open port/service detection with Nmap, providing remediation recommendations.</li>
@@ -35,7 +48,7 @@ Experienced in **web application security testing (OWASP Top 10)**, vulnerabilit
 </ul>
 {{< /timelineItem >}}
 
-{{< timelineItem icon="server" header="IT Support Specialist" badge="Feb 2025 – Apr 2025" subheader="Reif Technology" >}}
+{{< timelineItem icon="server" header="IT Support Specialist" badge="January 2025 – August 2025" subheader="Reif Technology" >}}
 <ul>
   <li> Provided first-line IT support, diagnosing and resolving hardware/software issues.</li>
   <li> Performed OS installations, virus removal, and optimization, improving system reliability.</li>
@@ -43,14 +56,19 @@ Experienced in **web application security testing (OWASP Top 10)**, vulnerabilit
 </ul>
 {{< /timelineItem >}}
 
-{{< timelineItem icon="network-wired" header="ICT Intern" badge="2022 – 2023" subheader="USIU Africa" >}}
+{{< timelineItem icon="network-wired" header="ICT Helpdesk Analyst" badge="June 2023 – August 2023" subheader="USIU Africa" >}}
 <ul>
   <li>Provided remote and on-site support, resolving network connectivity issues and PC problems.</li>
   <li>Resolved hardware and software issues on PCs and network endpoints.</li>
   <li>Assisted in network configuration and troubleshooting of switches, routers, VLANs, and access points.</li>
-  <li>Assisted in AD administration, auditing user permissions, unlocking accounts, and managing access rights.</li>
-  <li>Installed and configured Windows and Linux operating systems, strengthening troubleshooting proficiency.</li>
-  <li>Participated in ICT department training sessions covering networking, troubleshooting, and security fundamentals.</li>
+</ul>
+{{< /timelineItem >}}
+
+{{< timelineItem icon="network-wired" header="ICT Intern" badge="April 2022 – August 2022" subheader="USIU Africa" >}}
+<ul>
+  <li>Assisted in Active Directory administration , auditing user permissions, and unlocking user accounts, ensuring accurate user access rights and timely resolution of account lockouts.</li>
+  <li>Successfully installed and configured various operating systems, including Windows and Linux distributions, demonstrating proficiency in operating system installation and troubleshooting.</li>
+  <li>Attended training sessions offered by the ICT department, acquiring various skills in networking. Participated in hands-on exercises and practical simulations, gaining proficiency in network configuration, troubleshooting, and security protocols.</li>
 </ul>
 {{< /timelineItem >}}
 
