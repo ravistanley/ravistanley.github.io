@@ -1,0 +1,274 @@
+<!-- CYBERSECURITY PORTFOLIO HERO — red team / reverse engineering / terminals -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="42%" r="78%">
+      <stop offset="0%" stop-color="#0b1726" />
+      <stop offset="55%" stop-color="#060d18" />
+      <stop offset="100%" stop-color="#020509" />
+    </radialGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7df2ff" stop-opacity="0.5" />
+      <stop offset="45%" stop-color="#19c7e8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#19c7e8" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="ringCyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5eead4" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+
+    <linearGradient id="ringSlate" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#334155" stop-opacity="0" />
+      <stop offset="50%" stop-color="#64748b" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#334155" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="panelTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15263a" />
+      <stop offset="100%" stop-color="#0c1a29" />
+    </linearGradient>
+
+    <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b" />
+      <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+
+    <filter id="glowTight" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.2" result="b" />
+      <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+
+    <pattern id="hexGrid" width="84" height="146" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#16314a" stroke-width="1" opacity="0.55">
+        <path d="M42 0 L84 24 L84 73 L42 97 L0 73 L0 24 Z" />
+        <path d="M42 97 L84 121 L84 170 L42 194 L0 170 L0 121 Z" />
+      </g>
+    </pattern>
+
+    <g id="nodeDot">
+      <circle r="5" fill="#22d3ee" />
+      <circle r="10" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.45" />
+    </g>
+
+    <!-- reusable terminal chrome -->
+    <g id="termHeader">
+      <circle cx="14" cy="13" r="5" fill="#ef4444" opacity="0.85" />
+      <circle cx="32" cy="13" r="5" fill="#fbbf24" opacity="0.85" />
+      <circle cx="50" cy="13" r="5" fill="#34d399" opacity="0.85" />
+    </g>
+  </defs>
+
+  <!-- ===== BACKGROUND ===== -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#hexGrid)" opacity="0.45" />
+
+  <rect x="-40" y="0" width="40" height="1080" fill="#22d3ee" opacity="0.035">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="1960 0" dur="16s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- faint matrix-style code rain columns along the far edges, behind panels -->
+  <g font-family="'Courier New',monospace" font-size="14" fill="#15445f" opacity="0.5">
+    <g>
+      <text x="20" y="420">01</text><text x="20" y="440">10</text><text x="20" y="460">11</text>
+      <text x="20" y="480">00</text><text x="20" y="500">10</text><text x="20" y="520">01</text>
+      <animateTransform attributeName="transform" type="translate" from="0 -60" to="0 60" dur="10s" repeatCount="indefinite" />
+    </g>
+    <g>
+      <text x="1890" y="500">11</text><text x="1890" y="520">00</text><text x="1890" y="540">10</text>
+      <text x="1890" y="560">01</text><text x="1890" y="580">11</text><text x="1890" y="600">00</text>
+      <animateTransform attributeName="transform" type="translate" from="0 60" to="0 -60" dur="12s" repeatCount="indefinite" />
+    </g>
+  </g>
+
+  <!-- ===== CONNECTOR LINES FROM PANELS TO CORE ===== -->
+  <g stroke="#1f4f6b" stroke-width="1" stroke-dasharray="2 6" fill="none" opacity="0.6">
+    <path d="M600 230 L800 420" />
+    <path d="M1320 240 L1140 420" />
+    <path d="M620 760 L820 640" />
+    <path d="M1300 760 L1120 640" />
+  </g>
+
+  <!-- ===========================================================
+       PANEL 1 — TOP LEFT: RED TEAM RECON TERMINAL
+  ============================================================ -->
+  <g transform="translate(70 70)" filter="url(#glowSoft)">
+    <rect width="540" height="300" rx="10" fill="url(#panelTop)" stroke="#22d3ee" stroke-width="1" opacity="0.95" />
+  </g>
+  <g transform="translate(70 70)">
+    <rect width="540" height="300" rx="10" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.5" />
+    <rect width="540" height="34" rx="10" fill="#0e2032" />
+    <use href="#termHeader" x="14" y="4" />
+    <text x="270" y="22" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#7da7bd">recon@redteam — nmap</text>
+
+    <g font-family="'Courier New',monospace" font-size="15" fill="#5eead4">
+      <text x="20" y="64">$ nmap -sV -p- target.internal</text>
+      <text x="20" y="90" fill="#94a3b8">Starting scan... 65535 ports</text>
+      <text x="20" y="116">22/tcp   open   ssh      OpenSSH 8.2</text>
+      <text x="20" y="142">80/tcp   open   http     nginx 1.18</text>
+      <text x="20" y="168">445/tcp  open   smb      <tspan fill="#fbbf24">flagged</tspan></text>
+      <text x="20" y="194">3389/tcp open   rdp</text>
+      <text x="20" y="226" fill="#94a3b8">Host is up — enumerating services...</text>
+      <text x="20" y="252" fill="#7df2ff">root@kali:~# <tspan opacity="0.9">_</tspan>
+        <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite" />
+      </text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       PANEL 2 — TOP RIGHT: REVERSE ENGINEERING / DISASSEMBLY
+  ============================================================ -->
+  <g transform="translate(1310 70)" filter="url(#glowSoft)">
+    <rect width="540" height="340" rx="10" fill="url(#panelTop)" stroke="#a78bfa" stroke-width="1" opacity="0.95" />
+  </g>
+  <g transform="translate(1310 70)">
+    <rect width="540" height="340" rx="10" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.5" />
+    <rect width="540" height="34" rx="10" fill="#1c1530" />
+    <use href="#termHeader" x="14" y="4" />
+    <text x="270" y="22" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#b6a6dd">disasm — main.bin</text>
+
+    <g font-family="'Courier New',monospace" font-size="13.5" fill="#c4b5fd">
+      <text x="20" y="62"><tspan fill="#7c83a0">0x4011a0</tspan>  push   rbp</text>
+      <text x="20" y="86"><tspan fill="#7c83a0">0x4011a1</tspan>  mov    rbp, rsp</text>
+      <text x="20" y="110"><tspan fill="#7c83a0">0x4011a4</tspan>  sub    rsp, 0x20</text>
+      <text x="20" y="134"><tspan fill="#7c83a0">0x4011a8</tspan>  cmp    eax, 0x1</text>
+      <text x="20" y="158"><tspan fill="#7c83a0">0x4011ab</tspan>  je     0x4011f0</text>
+      <text x="20" y="182"><tspan fill="#7c83a0">0x4011ad</tspan>  call   sub_402310</text>
+      <text x="20" y="206"><tspan fill="#7c83a0">0x4011b2</tspan>  test   al, al</text>
+      <text x="20" y="230"><tspan fill="#7c83a0">0x4011b4</tspan>  jnz    loc_4011f0</text>
+      <text x="20" y="262" fill="#94a3b8">; hex dump</text>
+      <text x="20" y="286" fill="#7da7bd">55 48 89 e5 48 83 ec 20 83 f8 01 74 1a</text>
+      <text x="20" y="310" fill="#7da7bd">e8 12 34 00 00 84 c0 75 12 31 c0 c9 c3</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       PANEL 3 — BOTTOM LEFT: ATTACK PATH / NETWORK GRAPH
+  ============================================================ -->
+  <g transform="translate(70 660)" filter="url(#glowSoft)">
+    <rect width="580" height="350" rx="10" fill="url(#panelTop)" stroke="#22d3ee" stroke-width="1" opacity="0.95" />
+  </g>
+  <g transform="translate(70 660)">
+    <rect width="580" height="350" rx="10" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.5" />
+    <rect width="580" height="34" rx="10" fill="#0e2032" />
+    <use href="#termHeader" x="14" y="4" />
+    <text x="290" y="22" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#7da7bd">attack-path.map</text>
+
+    <g font-family="'Courier New',monospace" font-size="12.5" fill="#9fb8c8">
+      <!-- node graph -->
+      <g stroke="#22d3ee" stroke-width="1.2" fill="none" opacity="0.7">
+        <path d="M70 100 L210 70" />
+        <path d="M210 70 L370 110" />
+        <path d="M370 110 L500 80" />
+        <path d="M210 70 L260 230" />
+        <path d="M260 230 L430 260" />
+      </g>
+      <g fill="#7df2ff">
+        <circle cx="70" cy="100" r="3.5"><animateMotion dur="2.6s" repeatCount="indefinite" path="M0 0 L140 -30" /></circle>
+        <circle cx="210" cy="70" r="3.5"><animateMotion dur="2.6s" repeatCount="indefinite" path="M0 0 L160 40" /></circle>
+        <circle cx="210" cy="70" r="3.5"><animateMotion dur="3.2s" repeatCount="indefinite" path="M0 0 L50 160" /></circle>
+      </g>
+
+      <g filter="url(#glowTight)">
+        <use href="#nodeDot" x="70" y="100" />
+        <use href="#nodeDot" x="210" y="70" />
+        <use href="#nodeDot" x="370" y="110" />
+        <use href="#nodeDot" x="260" y="230" />
+      </g>
+      <!-- compromised target, amber pulse -->
+      <g filter="url(#glowTight)">
+        <circle cx="430" cy="260" r="8" fill="none" stroke="#fbbf24" stroke-width="1.5">
+          <animate attributeName="r" values="8;14;8" dur="2.2s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="430" cy="260" r="4.5" fill="#fbbf24" />
+      </g>
+      <g fill="none" stroke="#500" stroke-width="0" />
+
+      <text x="60" y="130">attacker</text>
+      <text x="195" y="58">pivot host</text>
+      <text x="355" y="140">lateral move</text>
+      <text x="245" y="252">internal svc</text>
+      <text x="395" y="300" fill="#fbbf24">target — compromised</text>
+
+      <!-- crosshair reticle around target -->
+      <g stroke="#fbbf24" stroke-width="1" opacity="0.55">
+        <circle cx="430" cy="260" r="26" fill="none" />
+        <line x1="430" y1="226" x2="430" y2="240" />
+        <line x1="430" y1="280" x2="430" y2="294" />
+        <line x1="396" y1="260" x2="410" y2="260" />
+        <line x1="450" y1="260" x2="464" y2="260" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       PANEL 4 — BOTTOM RIGHT: EXPLOIT / SHELL TERMINAL
+  ============================================================ -->
+  <g transform="translate(1270 700)" filter="url(#glowSoft)">
+    <rect width="580" height="310" rx="10" fill="url(#panelTop)" stroke="#34d399" stroke-width="1" opacity="0.95" />
+  </g>
+  <g transform="translate(1270 700)">
+    <rect width="580" height="310" rx="10" fill="none" stroke="#34d399" stroke-width="1" opacity="0.5" />
+    <rect width="580" height="34" rx="10" fill="#0e2620" />
+    <use href="#termHeader" x="14" y="4" />
+    <text x="290" y="22" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#86d9b8">session — shell</text>
+
+    <g font-family="'Courier New',monospace" font-size="15" fill="#6ee7b7">
+      <text x="20" y="64">msf6 &gt; exploit -j</text>
+      <text x="20" y="90" fill="#94a3b8">[*] Sending stage payload...</text>
+      <text x="20" y="116" fill="#94a3b8">[*] Session 1 opened</text>
+      <text x="20" y="148">meterpreter &gt; sysinfo</text>
+      <text x="20" y="174" fill="#94a3b8">OS: Linux x86_64</text>
+      <text x="20" y="200">meterpreter &gt; getuid</text>
+      <text x="20" y="226" fill="#94a3b8">Server username: root</text>
+      <text x="20" y="262" fill="#7df2ff">meterpreter &gt; <tspan opacity="0.9">_</tspan>
+        <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite" />
+      </text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       CENTRAL CORE — SHIELD / LOCK, ORBITS, RADAR SWEEP
+  ============================================================ -->
+  <g opacity="0.9">
+    <animateTransform attributeName="transform" type="rotate" from="0 960 540" to="360 960 540" dur="220s" repeatCount="indefinite" />
+    <circle cx="960" cy="540" r="190" fill="none" stroke="url(#ringSlate)" stroke-width="1" />
+    <circle cx="960" cy="540" r="190" fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="1 12" opacity="0.5" />
+  </g>
+
+  <g style="mix-blend-mode:screen">
+    <g transform="translate(960 540)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="9s" repeatCount="indefinite" additive="sum" />
+      <path d="M0 0 L0 -150 A150 150 0 0 1 37 -145 Z" fill="url(#sweepGrad)" />
+    </g>
+    <circle cx="960" cy="540" r="150" fill="none" stroke="#0e7490" stroke-width="1" opacity="0.4" />
+  </g>
+
+  <g filter="url(#glowSoft)">
+    <circle cx="960" cy="540" r="150" fill="url(#coreGlow)" />
+  </g>
+
+  <g transform="translate(960 540) scale(0.82)">
+    <path d="M0 -92 L74 -64 L74 18 C74 70 40 104 0 124 C-40 104 -74 70 -74 18 L-74 -64 Z"
+          fill="#0c1f2e" stroke="url(#ringCyan)" stroke-width="2.5" filter="url(#glowTight)" />
+    <path d="M0 -78 L60 -54 L60 16 C60 58 32 86 0 104 C-32 86 -60 58 -60 16 L-60 -54 Z"
+          fill="none" stroke="#22d3ee" stroke-width="0.75" opacity="0.45" />
+    <rect x="-26" y="2" width="52" height="42" rx="6" fill="none" stroke="#7df2ff" stroke-width="2.5" />
+    <path d="M-15 2 V-14 a15 15 0 0 1 30 0 V2" fill="none" stroke="#7df2ff" stroke-width="2.5" />
+    <circle cx="0" cy="22" r="4.5" fill="#7df2ff" />
+    <line x1="0" y1="22" x2="0" y2="32" stroke="#7df2ff" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <g opacity="0.7">
+    <animateTransform attributeName="transform" type="rotate" from="0 960 540" to="360 960 540" dur="34s" repeatCount="indefinite" />
+    <circle cx="960" cy="540" r="124" fill="none" stroke="url(#ringCyan)" stroke-width="1.5" stroke-dasharray="3 8" />
+  </g>
+
+</svg>
