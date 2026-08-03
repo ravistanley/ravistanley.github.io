@@ -2,7 +2,7 @@
 title: VulnBank
 author: b33tl3
 description: An intentionally vulnerable modern banking platform designed for learning cybersecurity, application security testing, and secure coding practices.
-date: 2026-06-21 00:00:00+0000
+date: 2026-08-03 00:00:00+0000
 categories: [Web Security]
 tags: [SSRF, XSS, IDOR, File Upload,Business Logic Flaws]
 ---
