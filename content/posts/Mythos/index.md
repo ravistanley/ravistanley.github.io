@@ -7,7 +7,7 @@ tags: [Mythos]
 ---
 
 ## Mythos: The AI That Is Redefining Cybersecurity 
-![Challenge](art.png)
+![Challenge](featured.png)
 
 Each technological revolution has had an impact on the evolution of the cybersecurity practices and the 
 perception of how to ensure cybersecurity. The advent of the Internet revolutionized network security 

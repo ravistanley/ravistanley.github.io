@@ -211,7 +211,7 @@ sudo chgrp developers file.txt
 These commands are particularly useful when managing shared projects and system files.
 
 ## Hands-On Linux Permissions Lab
-![Challenge](HandsOn.png) <br>
+![Challenge](featured.png) <br>
 *Figure 2: Practical exercise demonstrating file creation, permission modification, and permission testing.*<br>
 Let's walk through a simple permissions exercise.
 
